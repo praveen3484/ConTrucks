@@ -25,13 +25,13 @@ namespace Contrucks.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
- //   [EnableCors("*", "*", "*")]
+ //   [EnableCors("*", "*", "*")]//Token Based Authentication Link-identityserver.github.io/Documentation/docsv2
     public class AccountController : ApiController
     {
         private readonly IUserTablesService usertableservices;
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
-
+        
         /// <summary>
         /// Author: Praveen Chandra Bhatt
         /// </summary>
